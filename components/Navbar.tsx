@@ -25,7 +25,7 @@ const Navbar: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
         >
           <span className="sr-only">Toggle menu</span>
           <svg
-            className="h-6 w-6"
+            className="h-6 w-6 dark:stroke-White"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"

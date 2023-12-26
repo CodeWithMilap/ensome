@@ -19,6 +19,7 @@ const config: Config = {
       Grey: "#9497A1",
       Background: "#F1F6FA",
       Red: "#C14040",
+      transparent:'transparent'
     },
     extend: {
       boxShadow: {

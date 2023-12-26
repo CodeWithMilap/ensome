@@ -9,7 +9,7 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <header className="bg-white">
+    <header className="bg-white dark:bg-Secondary">
       <Navbar isOpen={isMobileMenuOpen} toggleMenu={toggleMobileMenu} />
       {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
       <MobileMenu isOpen={isMobileMenuOpen} toggleMenu={toggleMobileMenu} />

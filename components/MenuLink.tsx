@@ -20,7 +20,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
         <div className="relative">
           <button
             type="button"
-            className="flex items-center gap-x-1 font-manrope hover:text-Black font-semibold text-Grey text-base"
+            className="flex items-center gap-x-1 font-manrope hover:text-Black font-semibold text-Grey text-base dark:text-White dark:hover:text-White"
             aria-haspopup="true"
             aria-expanded={isDropdownOpen}
             onClick={toggleDropdown}
@@ -47,7 +47,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
 
           {menuItems && (
             <div
-              className={`absolute -z-10 right-0 top-full min-w-60 mt-3 overflow-hidden rounded-sm bg-white shadow-Card3 ${
+              className={`absolute -z-10 right-0 top-full min-w-60 mt-3 overflow-hidden rounded-sm bg-white shadow-Card3 dark:bg-Secondary ${
                 isDropdownOpen
                   ? "open transition ease-out duration-200 transform translate-y-0 opacity-100 z-10"
                   : "transition ease-in duration-150 transform translate-y-1 opacity-0"
@@ -58,7 +58,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
                   <Link
                     key={index}
                     href={menuItem.href}
-                    className="block font-manrope py-2 hover:text-Black font-semibold text-Grey text-base"
+                    className="block font-manrope py-2 hover:text-Black font-semibold text-Grey text-base dark:text-White dark:hover:text-White dark:border-b dark:border-transparent dark:hover:border-b dark:hover:border-White"
                   >
                     {menuItem.label}
                   </Link>
@@ -70,7 +70,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
       ) : (
         <Link
           href={href}
-          className="block font-manrope hover:text-Black font-semibold text-Grey text-base"
+          className="block font-manrope hover:text-Black font-semibold text-Grey text-base dark:text-White dark:hover:text-White dark:hover:border-b dark:border-White"
         >
           {label}
         </Link>
