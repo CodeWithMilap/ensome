@@ -29,8 +29,9 @@ const Button: React.FC<ButtonProps> = ({
 
   const buttonColorClasses = {
     primary:
-      "bg-Primary text-White hover:shadow-Button hover:bg-opacity-90 focus:shadow-none focus:bg-Primary",
-    secondary: "hover:shadow-Button",
+      "bg-Primary text-White hover:shadow-Button hover:bg-opacity-90 focus:shadow-none focus:bg-Primary border-Primary",
+    secondary:
+      "hover:shadow-Button border-Primary lg:border-transparent lg:text-Black text-Primary",
   };
 
   return (
@@ -38,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
       {href ? (
         <Link
           href={href}
-          className={`flex ${buttonSizeClasses[size]} ${buttonColorClasses[buttonColor]} disabled:bg-Grey rounded-md transition duration-300 ease-in-out`}
+          className={`${buttonSizeClasses[size]} ${buttonColorClasses[buttonColor]} min-h-[50px]   border flex justify-center items-center w-full disabled:bg-Grey rounded-md transition duration-300 ease-in-out`}
         >
           {icon && <span className="mr-2">{icon}</span>}
           {label}
@@ -46,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
       ) : (
         <button
           type="button"
-          className={`flex items-center ${buttonSizeClasses[size]} ${buttonColorClasses[buttonColor]} rounded-md transition duration-300 ease-in-out`}
+          className={`flex items-center ${buttonSizeClasses[size]} ${buttonColorClasses[buttonColor]} border min-h-[50px] flex justify-center items-center w-full rounded-md transition duration-300 ease-in-out`}
           onClick={onClick}
         >
           {icon && <span className="mr-2">{icon}</span>}
