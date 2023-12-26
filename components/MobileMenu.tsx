@@ -43,10 +43,20 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
           </button>
         </div>
         <div className="mt-6 flow-root">
-          <div className="-my-6 divide-y divide-gray-500/10">
-            <div className="space-y-4 py-6">
+          <div className="border-t border-Helper-blue-2">
+            <div className="">
               <MenuLink label="Features" href="#" />
               <MenuLink label="Marketplace" href="#" />
+              <MenuLink
+                label="Product"
+                href="/product"
+                menuItems={[
+                  { label: "Analytics", href: "/analytics" },
+                  { label: "Engagement", href: "/engagement" },
+                  { label: "Security", href: "/security" },
+                  // Add more menu items as needed
+                ]}
+              />
               <MenuLink label="Company" href="#" />
             </div>
           </div>
