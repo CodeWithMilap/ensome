@@ -19,7 +19,7 @@ const HeroSection = () => {
               className="w-full"
             />
           </div>
-          <div className="lg:max-w-xl flex flex-col gap-8 lg:pr-2 py-5">
+          <div className="lg:max-w-xl w-full flex flex-col gap-8 lg:pr-2 py-5">
             <Title
               className="max-w-xl"
               title="Find true power in your data with Ensome"
