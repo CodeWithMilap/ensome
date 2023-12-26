@@ -24,13 +24,13 @@ const Button: React.FC<ButtonProps> = ({
   const buttonSizeClasses = {
     small: "text-xs px-2 py-1",
     medium: "text-sm px-4 py-3",
-    large: "text-base px-11 py-4 font-bold",
+    large: `text-base  py-3 font-bold ${icon ? "px-6" : "px-11"}`,
   };
 
   const buttonColorClasses = {
     primary:
       "bg-Primary text-White hover:shadow-Button hover:bg-opacity-90 focus:shadow-none focus:bg-Primary",
-    secondary: "bg-Secondary hover:shadow-Button",
+    secondary: "hover:shadow-Button",
   };
 
   return (
