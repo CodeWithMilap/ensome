@@ -17,7 +17,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
   return (
     <>
       {menuItems ? (
-        <div className="relative border-b lg:border-transparent border-Helper-blue-2 border-opacity-50">
+        <div className="relative border-b lg:border-transparent border-Helper-blue-2 border-opacity-50 dark:hover:border-Helper-blue-2">
           <button
             type="button"
             className="flex py-4 lg:py-0 w-full justify-between items-center gap-x-1 font-manrope hover:text-Black font-semibold text-Grey text-base dark:text-White dark:hover:text-White "
