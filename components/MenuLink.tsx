@@ -47,7 +47,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
 
           {menuItems && (
             <div
-              className={`lg:absolute -z-10 right-0 top-full lg:min-w-60 lg:mt-6 overflow-hidden rounded-sm bg-white lg:shadow-Card3 dark:bg-Secondary ${
+              className={`lg:absolute -z-10 right-0 top-full lg:min-w-60 lg:mt-6 overflow-hidden rounded-sm bg-white lg:shadow-DropDown dark:bg-Secondary ${
                 isDropdownOpen
                   ? "open transition ease-out duration-200 transform translate-y-0 opacity-100 z-10"
                   : "transition ease-in duration-150 transform translate-y-1 opacity-0 hidden"
