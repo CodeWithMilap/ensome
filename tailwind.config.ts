@@ -15,6 +15,7 @@ const config: Config = {
       "Helper-blue-2": "#607D94",
       "Helper-blue-3": "#C9DCEC",
       Black: "#292D33",
+      White: "#FFFFFF",
       Grey: "#9497A1",
       Background: "#F1F6FA",
       Red: "#C14040",
