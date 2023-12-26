@@ -15,12 +15,12 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
   };
 
   return (
-    <div className="relative inline-block">
+    <>
       {menuItems ? (
-        <div className="relative inline-block">
+        <div className="relative">
           <button
             type="button"
-            className="flex items-center gap-x-1 font-manrope text-Grey text-sm"
+            className="flex items-center gap-x-1 font-manrope hover:text-Black font-semibold text-Grey text-base"
             aria-haspopup="true"
             aria-expanded={isDropdownOpen}
             onClick={toggleDropdown}
@@ -58,7 +58,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
                   <Link
                     key={index}
                     href={menuItem.href}
-                    className="block font-manrope text-Grey text-sm py-2"
+                    className="block font-manrope py-2 hover:text-Black font-semibold text-Grey text-base"
                   >
                     {menuItem.label}
                   </Link>
@@ -68,11 +68,14 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
           )}
         </div>
       ) : (
-        <Link href={href} className="block font-manrope text-Grey text-sm">
+        <Link
+          href={href}
+          className="block font-manrope hover:text-Black font-semibold text-Grey text-base"
+        >
           {label}
         </Link>
       )}
-    </div>
+    </>
   );
 };
 
