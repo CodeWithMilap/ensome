@@ -8,7 +8,7 @@ import { PlayCircle } from "@/constants/Icons";
 const HeroSection = () => {
   return (
     <section>
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto lg:px-8 px-6">
         <div className="flex items-center min-h-[566px] relative">
           <div className="max-w-xl flex flex-col gap-8 pr-2">
             <h2 className="text-5xl font-extrabold leading-tight">
@@ -30,7 +30,7 @@ const HeroSection = () => {
               />
             </div>
           </div>
-          <div className="min-w-[845px] absolute -right-72">
+          <div className="">
             <Image src={HeroImage} alt="" width={845} height={518} />
           </div>
         </div>
