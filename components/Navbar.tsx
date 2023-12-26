@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "./Logo";
 import MenuLink from "./MenuLink";
+import Button from "./Button";
+import { PlayCircle } from "@/constants/Icons";
 interface MobileMenuProps {
   isOpen: boolean;
   toggleMenu: () => void;
@@ -63,9 +65,10 @@ const Navbar: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
         <MenuLink label="Contacts" href="#" />
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Log in <span aria-hidden="true">&rarr;</span>
-        </a>
+        <Button
+          label="Watch the demo"
+          icon={<PlayCircle className="fill-White" />}
+        />
       </div>
     </nav>
   );
