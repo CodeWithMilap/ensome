@@ -2,17 +2,15 @@
 import React, { ReactNode } from "react";
 
 interface CardsProps {
-  title?: string;
-  content?: string;
   icon?: ReactNode;
+  children?: ReactNode;
 }
 
-const Cards: React.FC<CardsProps> = ({ title, content, icon }) => {
+const Cards: React.FC<CardsProps> = ({ icon, children }) => {
   return (
-    <div className="shadow-Card2 px-9 py-11 rounded-md flex flex-col gap-7 bg-White">
+    <div className="shadow-Card2 px-9 py-11 rounded-md flex flex-col gap-7 bg-White w-full">
       {icon && <div className="text-4xl">{icon}</div>}
-      {title && <h2 className="text-2xl font-bold">{title}</h2>}
-      {content && <p className="text-base">{content}</p>}
+      <div className="flex flex-col gap-4">{children}</div>
     </div>
   );
 };
