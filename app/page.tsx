@@ -257,6 +257,35 @@ export default function Home() {
           </div>
         </div>
       </Section>
+
+      <Section className="lg:py-12 py-6 bg-Primary">
+        <div className="flex justify-around text-White divide-x">
+          <div className="flex justify-center w-full">
+            <div className="flex flex-col gap-5 text-center">
+              <h2 className="lg:text-5xl text-3xl font-extrabold">1830+</h2>
+              <h4 className="font-bold">Project executed</h4>
+            </div>
+          </div>
+          <div className="flex justify-center w-full">
+            <div className="flex flex-col gap-5 text-center">
+              <h2 className="lg:text-5xl text-3xl font-extrabold">1830+</h2>
+              <h4 className="font-bold">Project executed</h4>
+            </div>
+          </div>
+          <div className="flex justify-center w-full">
+            <div className="flex flex-col gap-5 text-center">
+              <h2 className="lg:text-5xl text-3xl font-extrabold">1830+</h2>
+              <h4 className="font-bold">Project executed</h4>
+            </div>
+          </div>
+          <div className="flex justify-center w-full">
+            <div className="flex flex-col gap-5 text-center">
+              <h2 className="lg:text-5xl text-3xl font-extrabold">1830+</h2>
+              <h4 className="font-bold">Project executed</h4>
+            </div>
+          </div>
+        </div>
+      </Section>
     </main>
   );
 }
