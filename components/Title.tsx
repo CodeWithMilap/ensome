@@ -13,13 +13,13 @@ const Title: FC<TitleProps> = ({
   title,
   content,
   className = '',
-  fontSize = "lg:text-5xl text-3xl",
+  fontSize = "lg:text-[2.85rem] text-3xl",
 }) => {
   return (
     <div className={`flex flex-col gap-6 ${className}`}>
-      <h2 className={`font-extrabold leading-tight ${fontSize}`}>{title}</h2>
+      <h2 className={`font-extrabold lg:!leading-tight font-manrope ${fontSize}`}>{title}</h2>
       {content && (
-        <p className="font-opensans text-Grey leading-snug">
+        <p className="font-opensans text-Grey lg:text-xl">
           {content}
         </p>
       )}
