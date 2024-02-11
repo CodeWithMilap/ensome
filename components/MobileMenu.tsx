@@ -15,8 +15,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
       role="dialog"
       aria-modal="true"
     >
-      <div className="fixed inset-0 z-10"></div>
-      <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-Secondary px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div className="fixed inset-0 z-10 bg-Primary"></div>
+      <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-Secondary px-6 py-6 lg:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         {/* Mobile menu content */}
         <div className="flex items-center justify-between">
           <Logo />
@@ -27,10 +27,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
           >
             <span className="sr-only">Close menu</span>
             <svg
-              className="h-6 w-6 lg:stroke-Black stroke-White"
+              className="h-6 w-6 stroke-White "
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               aria-hidden="true"
             >
@@ -43,7 +43,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
           </button>
         </div>
         <div className="mt-6 flow-root">
-          <div className="border-t border-Helper-blue-2">
+          <div className="border-t border-White  border-opacity-80">
             <div className="">
               <MenuLink label="Features" href="#" />
               <MenuLink label="Marketplace" href="#" />

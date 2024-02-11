@@ -17,10 +17,10 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
   return (
     <>
       {menuItems ? (
-        <div className="relative border-b lg:border-transparent border-Helper-blue-2 border-opacity-50 ">
+        <div className="relative border-b lg:border-transparent border-White  border-opacity-80 ">
           <button
             type="button"
-            className="flex py-4 lg:py-0 w-full justify-between items-center gap-x-1 font-manrope lg:hover:text-Black font-semibold text-Grey text-base"
+            className="flex py-4 lg:py-0 w-full justify-between items-center gap-x-1 font-manrope lg:hover:text-Black font-semibold lg:text-Grey text-White text-base"
             aria-haspopup="true"
             aria-expanded={isDropdownOpen}
             onClick={toggleDropdown}
@@ -58,7 +58,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
                   <Link
                     key={index}
                     href={menuItem.href}
-                    className="block font-manrope py-2 lg:hover:text-Black font-semibold text-Grey text-sm lg:text-base border-b border-transparent hover:border-Helper-blue-2 border-opacity-50"
+                    className="block font-manrope py-2 lg:hover:text-Black font-semibold lg:text-Grey text-White text-sm lg:text-base border-b border-transparent hover:border-Helper-blue-2  border-opacity-80"
                   >
                     {menuItem.label}
                   </Link>
@@ -70,7 +70,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
       ) : (
         <Link
           href={href}
-          className="block font-manrope py-4 lg:py-0 hover:text-Black font-semibold text-Grey text-base border-b lg:border-transparent border-Helper-blue-2 border-opacity-50"
+          className="block font-manrope py-4 lg:py-0 hover:text-Black font-semibold lg:text-Grey text-White text-base border-b lg:border-transparent border-White border-opacity-80"
         >
           {label}
         </Link>
