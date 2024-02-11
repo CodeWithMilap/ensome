@@ -24,7 +24,7 @@ const HeroSection = () => {
             className="max-w-xl"
             title="Find true power in your data with Ensome"
           />
-          <p className="font-opensans text-Grey leading-snug max-w-md">
+          <p className="font-opensans text-Grey lg:text-xl max-w-xl">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
