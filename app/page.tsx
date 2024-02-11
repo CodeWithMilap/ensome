@@ -36,25 +36,28 @@ export default function Home() {
 
           <div className="flex gap-8 lg:flex-row flex-col">
             <Cards icon={<BrainCircuit />}>
-              <Title
-                fontSize="text-2xl"
-                title="Machine learning"
-                content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
-              />
+              <Title fontSize="text-2xl" title="Machine learning" />
+              <p className="font-opensans text-Grey ">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores.
+              </p>
             </Cards>
             <Cards icon={<BrainCircuit />}>
-              <Title
-                fontSize="text-2xl"
-                title="Embed analytics"
-                content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
-              />
+              <Title fontSize="text-2xl" title="Embed analytics" />
+              <p className="font-opensans text-Grey ">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores.
+              </p>
             </Cards>
             <Cards icon={<BrainCircuit />}>
-              <Title
-                fontSize="text-2xl"
-                title="Access control"
-                content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
-              />
+              <Title fontSize="text-2xl" title="Access control" />
+              <p className="font-opensans text-Grey ">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores.
+              </p>
             </Cards>
           </div>
         </div>
@@ -118,8 +121,12 @@ export default function Home() {
               <Title
                 fontSize="text-2xl"
                 title="Sed ut perspiciatis unde omnis at vero blanditils"
-                content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti... "
               />
+              <p className="font-opensans text-Grey ">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores.
+              </p>
               <div className="flex gap-2">
                 <Link
                   href={"#"}
@@ -141,8 +148,12 @@ export default function Home() {
               <Title
                 fontSize="text-2xl"
                 title="Sed ut perspiciatis unde omnis at vero blanditils"
-                content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti... "
               />
+              <p className="font-opensans text-Grey ">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores.
+              </p>
               <div className="flex gap-2">
                 <Link
                   href={"#"}
@@ -164,8 +175,12 @@ export default function Home() {
               <Title
                 fontSize="text-2xl"
                 title="Sed ut perspiciatis unde omnis at vero blanditils"
-                content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti... "
               />
+              <p className="font-opensans text-Grey ">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores.
+              </p>
               <div className="flex gap-2">
                 <Link
                   href={"#"}
@@ -185,6 +200,60 @@ export default function Home() {
 
           <div className="flex items-center justify-center">
             <Button label="Learn more" size="large" />
+          </div>
+        </div>
+      </Section>
+
+      <Section className="lg:py-12 py-6">
+        <div className="flex flex-col gap-20">
+          <Title
+            className="text-left max-w-md"
+            title="Trusted by the best in the business"
+          />
+
+          <div className="flex gap-8 lg:flex-row flex-col">
+            <div className="shadow-Card3 px-9 py-11 rounded-md flex flex-col gap-10 bg-White w-full relative">
+              <div className="flex -space-x-2 overflow-hidden  top-0 -mt-20">
+                <img
+                  className="inline-block h-20 w-20 rounded-full "
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""
+                />
+              </div>
+              <p className="font-opensans text-Grey ">
+                “Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                voluptate velit esse quam nihil molestiae consequatur, vel
+                illum.”
+              </p>
+
+              <div className="font-manrope">
+                <div className="text-Black font-bold">Alex Bern</div>
+                <span className="text-Grey">CEO by PixelPerfect</span>
+              </div>
+            </div>
+            <div className="shadow-Card3 px-9 py-11 rounded-md flex flex-col gap-10 bg-White w-full relative">
+              <div className="flex -space-x-2 overflow-hidden  top-0 -mt-20">
+                <img
+                  className="inline-block h-20 w-20 rounded-full "
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""
+                />
+              </div>
+              <p className="font-opensans text-Grey ">
+                “Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                voluptate velit esse quam nihil molestiae consequatur, vel
+                illum.”
+              </p>
+
+              <div className="font-manrope">
+                <div className="text-Black font-bold">Alex Bern</div>
+                <span className="text-Grey">CEO by PixelPerfect</span>
+              </div>
+            </div>
           </div>
         </div>
       </Section>
