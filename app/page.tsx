@@ -9,6 +9,7 @@ import Image from "next/image";
 import Image1 from "../public/002_illustration.png";
 import Image2 from "../public/003_llustration.png";
 import Link from "next/link";
+import Input from "@/components/Input";
 
 export default function Home() {
   const clientLogos = [
@@ -282,6 +283,89 @@ export default function Home() {
             <div className="flex flex-col gap-5 text-center">
               <h2 className="lg:text-5xl text-3xl font-extrabold">1830+</h2>
               <h4 className="font-bold">Project executed</h4>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section className="lg:py-24 py-6 bg-Background">
+        <div className="flex gap-32">
+          <div className="flex flex-col gap-20">
+            <div className="flex flex-col gap-6">
+              <Title
+                className="text-left max-w-2xl"
+                title="Left questions? Contacts us now for a free consultation and free trial!"
+              />
+              <p className="font-opensans text-Grey ">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-6">
+              <dl className="flex flex-col gap-1">
+                <dt className="text-Grey">Email address</dt>
+                <dd className="font-bold">ensome@info.co.us</dd>
+              </dl>
+
+              <dl className="flex flex-col gap-1">
+                <dt className="text-Grey">Phone number</dt>
+                <dd className="font-bold">+1601-201-5580</dd>
+              </dl>
+
+              <dl className="flex flex-col gap-1">
+                <dt className="text-Grey">Address</dt>
+                <dd className="font-bold">
+                  1642 Washington Avenue, Jackson, MS, Mississippi, 39201
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div className="max-w-[445px] w-full flex">
+            <div className="shadow-Card2 px-9 py-11 rounded-md flex flex-col gap-10 bg-White w-full relative">
+              <Title
+                className="text-left max-w-2xl "
+                fontSize="text-3xl"
+                title="Contact Us"
+              />
+
+              <div className="flex flex-col gap-5">
+                <Input
+                  label="Name"
+                  name="name"
+                  id="name"
+                  type="text"
+                  autoComplete="given-name"
+                />
+
+                <Input
+                  label="Email"
+                  name="email"
+                  id="email"
+                  type="email"
+                  autoComplete="given-email"
+                />
+
+                <Input
+                  label="Theme"
+                  name="theme"
+                  id="theme"
+                  type="text"
+                  autoComplete="given-name"
+                />
+
+                <Input
+                  label="Message"
+                  name="Message"
+                  id="Message"
+                  type="text"
+                  autoComplete="given-name"
+                />
+                <div className="mt-5">
+                  <Button label="Send" size="large" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
