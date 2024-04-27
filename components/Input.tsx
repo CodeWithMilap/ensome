@@ -2,11 +2,11 @@
 import React from "react";
 
 interface InputProps {
-  label: string;
+  label?: string;
   name: string;
   id: string;
   type: string;
-  autoComplete: string;
+  autoComplete?: string;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -18,12 +18,14 @@ const Input: React.FC<InputProps> = ({
 }) => {
   return (
     <div className="">
-      <label
-        htmlFor={id}
-        className="block text-sm font-medium leading-6 text-Grey"
-      >
-        {label}
-      </label>
+      {label &&
+        <label
+          htmlFor={id}
+          className="block text-sm font-medium leading-6 text-Grey"
+        >
+          {label}
+        </label>
+      }
       <div className="">
         <input
           type={type}

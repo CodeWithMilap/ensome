@@ -7,7 +7,7 @@ interface ButtonProps {
   label: string;
   size?: "small" | "medium" | "large";
   textColor?: string;
-  buttonColor?: "primary" | "secondary";
+  buttonColor?: "primary" | "secondary" | "white";
   onClick?: () => void;
   href?: string;
   icon?: React.ReactNode; // New property for the icon
@@ -32,6 +32,8 @@ const Button: React.FC<ButtonProps> = ({
       "bg-Primary text-White hover:shadow-Button hover:bg-opacity-90 focus:shadow-none focus:bg-Primary border-Primary",
     secondary:
       "hover:shadow-Button border-Primary lg:border-transparent lg:text-Black text-Primary",
+    white:
+      "border-none text-Black bg-White",
   };
 
   return (

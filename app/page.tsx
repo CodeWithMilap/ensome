@@ -323,7 +323,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-[445px] w-full flex">
-            <div className="shadow-Card2 px-9 py-11 rounded-md flex flex-col gap-10 bg-White w-full relative">
+            <div className="shadow-Card3 px-9 py-11 rounded-md flex flex-col gap-10 bg-White w-full relative">
               <Title
                 className="text-left max-w-2xl "
                 fontSize="text-3xl"
@@ -366,6 +366,31 @@ export default function Home() {
                   <Button label="Send" size="large" />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+
+      <Section className="lg:py-20 py-6 bg-Primary">
+        <div className="grid grid-cols-2 items-center gap-20">
+          <div className="flex flex-col gap-6 max-w-lg">
+            <Title
+              title="Subscribe to our newsletter"
+              className=" text-White"
+              fontSize="text-4xl"
+            />
+            <p className="text-lg text-White">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          </div>
+
+          <div className="flex relative rounded-md overflow-hidden">
+            <input
+              type='email'
+              className="block w-full text-sm border-0 py-3 placeholder:text-Black outline-none font-bold bg-Helper-blue-3 px-6 min-h-[50px]"
+              placeholder="Your email"
+            />
+            <div className="absolute right-0">
+              <Button label="Send" size="large" buttonColor="white" />
             </div>
           </div>
         </div>
