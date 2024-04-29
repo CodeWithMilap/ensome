@@ -260,7 +260,7 @@ export default function Home() {
       </Section>
 
       <Section className="lg:py-12 py-6 bg-Primary">
-        <div className="flex justify-around text-White divide-x">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 justify-around text-White lg:divide-x divide-Helper-blue-3 divide-opacity-30 ">
           <div className="flex justify-center w-full">
             <div className="flex flex-col gap-5 text-center">
               <h2 className="lg:text-5xl text-3xl font-extrabold">1830+</h2>
@@ -289,7 +289,7 @@ export default function Home() {
       </Section>
 
       <Section className="lg:py-24 py-6 bg-Background">
-        <div className="flex gap-32">
+        <div className="flex lg:flex-row flex-col gap-32">
           <div className="flex flex-col gap-20">
             <div className="flex flex-col gap-6">
               <Title
@@ -373,7 +373,7 @@ export default function Home() {
 
 
       <Section className="lg:py-20 py-6 bg-Primary">
-        <div className="grid grid-cols-2 items-center gap-20">
+        <div className="grid lg:grid-cols-2  grid-cols-1 items-center gap-20">
           <div className="flex flex-col gap-6 max-w-lg">
             <Title
               title="Subscribe to our newsletter"
