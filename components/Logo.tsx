@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import LogoImg from "../public/logo_blue.svg";
-import Image from "next/image";
-const Logo = () => {
+
+// Logo component now accepts a className prop
+const Logo = ({ className = "" }) => {
   return (
-    <Link href="#" className="-m-1.5 p-1.5">
-      <span className="sr-only">Your Company</span>
-      <Image className="lg:h-12 h-8 w-auto" src={LogoImg} alt="" />
+    <Link href="#" className={`-m-1.5 p-1.5 ${className}`}>
+      <span className="sr-only">Logo</span>
+      <div className="text-2xl font-semibold">Logo</div>
     </Link>
   );
 };

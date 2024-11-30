@@ -17,10 +17,10 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
   return (
     <>
       {menuItems ? (
-        <div className="relative border-b lg:border-transparent border-White  border-opacity-80 ">
+        <div className="relative border-b lg:border-transparent border-white  border-opacity-80 ">
           <button
             type="button"
-            className="flex py-4 lg:py-0 w-full justify-between items-center gap-x-1 font-manrope lg:hover:text-Black font-semibold lg:text-Grey text-White text-base"
+            className="flex py-4 lg:py-0 w-full justify-between items-center gap-x-1 font-manrope lg:hover:text-primary-500 text-white lg:text-black text-base"
             aria-haspopup="true"
             aria-expanded={isDropdownOpen}
             onClick={toggleDropdown}
@@ -30,7 +30,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
           >
             <span>{label}</span>
             <svg
-              className={`h-5 w-5 flex-none text-gray-400 transform ${
+              className={`h-5 w-5 flex-none transform ${
                 isDropdownOpen ? "rotate-180" : ""
               }`}
               viewBox="0 0 20 20"
@@ -47,7 +47,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
 
           {menuItems && (
             <div
-              className={`lg:absolute -z-10 right-0 top-full lg:min-w-60 lg:mt-6 overflow-hidden rounded-sm bg-white lg:shadow-DropDown bg-Background ${
+              className={`lg:absolute -z-10 right-0 top-full lg:min-w-60 lg:mt-6 overflow-hidden rounded-sm lg:bg-white lg:shadow-DropDown  ${
                 isDropdownOpen
                   ? "open transition ease-out duration-200 transform translate-y-0 opacity-100 z-10"
                   : "transition ease-in duration-150 transform translate-y-1 opacity-0 hidden"
@@ -58,7 +58,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
                   <Link
                     key={index}
                     href={menuItem.href}
-                    className="block font-manrope py-2 lg:hover:text-Black font-semibold lg:text-Grey text-White text-sm lg:text-base border-b border-transparent hover:border-Helper-blue-2  border-opacity-80"
+                    className="block font-manrope py-2 lg:hover:text-primary-500 text-white lg:text-black  text-sm lg:text-base border-b border-transparent hover:border-white  border-opacity-80"
                   >
                     {menuItem.label}
                   </Link>
@@ -70,7 +70,7 @@ const MenuLink: React.FC<MenuItemProps> = ({ label, href, menuItems }) => {
       ) : (
         <Link
           href={href}
-          className="block font-manrope py-4 lg:py-0 hover:text-Black font-semibold lg:text-Grey text-White text-base border-b lg:border-transparent border-White border-opacity-80"
+          className="block font-manrope py-4 lg:py-0 hover:text-primary-500 text-white lg:text-black text-base border-b lg:border-transparent border-white border-opacity-80"
         >
           {label}
         </Link>

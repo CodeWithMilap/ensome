@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import React from "react";
-import Section from "./Section";
+import Section from "./PixelBlock/Section";
+import MarqueeImageScroller from "./PixelBlock/MarqueeImageScroller";
+import { marqueeImages } from "@/data/data";
 
 interface ClientLogosProps {
   logos: string[];
@@ -11,7 +13,9 @@ interface ClientLogosProps {
 const ClientLogos: React.FC<ClientLogosProps> = ({ logos }) => {
   return (
     <Section>
-      <div className="grid grid-cols-6">
+      <MarqueeImageScroller images={marqueeImages} />
+
+      {/* <div className="grid grid-cols-6">
         {logos.map((logo, index) => (
           <div
             className="lg:col-span-1 col-span-2 flex items-center justify-center"
@@ -26,7 +30,7 @@ const ClientLogos: React.FC<ClientLogosProps> = ({ logos }) => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </Section>
   );
 };

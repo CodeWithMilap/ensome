@@ -21,7 +21,7 @@ const Input: React.FC<InputProps> = ({
       {label &&
         <label
           htmlFor={id}
-          className="block text-sm font-medium leading-6 text-Grey"
+          className="block text-sm font-medium leading-6  "
         >
           {label}
         </label>
@@ -32,7 +32,7 @@ const Input: React.FC<InputProps> = ({
           name={name}
           id={id}
           autoComplete={autoComplete}
-          className="block w-full text-sm border-0 py-1.5 placeholder:text-Grey border-b border-Grey outline-none font-bold"
+          className="block w-full text-sm border-0 py-1.5 placeholder:  border-b border-Grey outline-none font-semibold text-black"
         />
       </div>
     </div>

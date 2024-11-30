@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "./Logo";
 import MenuLink from "./MenuLink";
-import Button from "./Button";
 import { PlayCircle } from "@/constants/Icons";
+import Button from "./PixelBlock/Button";
 interface MobileMenuProps {
   isOpen: boolean;
   toggleMenu: () => void;
@@ -11,11 +11,11 @@ interface MobileMenuProps {
 const Navbar: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
   return (
     <nav
-      className="mx-auto flex max-w-screen-xl items-center justify-between p-6 lg:px-8"
+      className="mx-auto flex max-w-screen-xl gap-x-12 items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
       <div className="flex lg:flex-1">
-        <Logo />
+        <Logo className="text-primary-500" />
       </div>
       <div className="flex lg:hidden">
         <button
@@ -25,7 +25,7 @@ const Navbar: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
         >
           <span className="sr-only">Toggle menu</span>
           <svg
-            className="h-6 w-6 stroke-Primary"
+            className="h-6 w-6 stroke-primary"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
@@ -64,11 +64,13 @@ const Navbar: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
         <MenuLink label="Blog" href="#" />
         <MenuLink label="Contacts" href="#" />
       </div>
-      <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+      <div className="hidden lg:flex lg:justify-end">
         <Button
-          label="Watch the demo"
-          icon={<PlayCircle className="fill-White" />}
-        />
+          icon={<PlayCircle className="hover:fill-white " />}
+          variant="ghost"
+        >
+          Watch the demo
+        </Button>
       </div>
     </nav>
   );

@@ -11,8 +11,8 @@ const manrope = Manrope({
 });
 const opensans = Open_Sans({
   subsets: ["latin"],
-  variable: "--font-opensans",
-  weight: ["400", "500", "600", "700", "800"],
+  variable: "--  ",
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${opensans.variable} font-opensans`}
+        className={`${manrope.variable} ${opensans.variable}    text-Grey`}
       >
         <Header />
         {children}
